@@ -3,7 +3,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>MavenReleasePlugin</artifactId>
-    <version>1.0</version>
+    <version>1.0-Snapshot</version>
     <packaging>jar</packaging>
 
     <name>MavenReleasePlugin</name>
@@ -18,7 +18,7 @@
     <scm>
         <developerConnection>scm:git:https://github.com/kpnishanth/MavenReleasePlugin.git</developerConnection>
         <url>https://github.com/kpnishanth/MavenReleasePlugin</url>
-      <tag>ss</tag>
+      <tag>release1.0</tag>
   </scm>
 
     <dependencies>
