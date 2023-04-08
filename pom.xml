@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>MavenReleasePlugin</artifactId>
+    <version>1.0-Snapshot</version>
+    <packaging>jar</packaging>
+
+    <name>MavenReleasePlugin</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.scm.id>gitHub</project.scm.id>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+    </properties>
+    <scm>
+        <developerConnection>scm:git:https://github.com/kpnishanth/MavenReleasePlugin.git</developerConnection>
+        <url>https://github.com/kpnishanth/MavenReleasePlugin</url>
+      <tag>release1.0</tag>
+  </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>packagecloud.Release</id>
+            <url>packageCloud+https://packagecloud.io/kpnishanth/Release</url>
+        </repository>
+        <snapshotRepository>
+            <id>packagecloud.Snapshot</id>
+            <url>packageCloud+https://packagecloud.io/kpnishanth/Snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>io.packagecloud.maven.wagon</groupId>
+                <artifactId>maven-packagecloud-wagon</artifactId>
+                <version>0.0.6</version>
+            </extension>
+        </extensions>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
