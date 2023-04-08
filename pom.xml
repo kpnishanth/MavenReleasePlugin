@@ -16,7 +16,7 @@
         <maven.compiler.target>19</maven.compiler.target>
     </properties>
     <scm>
-        <developerConnection>scm:git:https://github.com/kpnishanth/MavenReleasePlugin.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:kpnishanth/MavenReleasePlugin.git</developerConnection>
         <url>https://github.com/kpnishanth/MavenReleasePlugin</url>
       <tag>release1.0</tag>
   </scm>
