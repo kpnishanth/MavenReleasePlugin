@@ -32,7 +32,7 @@
     <distributionManagement>
         <repository>
             <id>packagecloud.Release</id>
-            <url>packageCloud+https://packagecloud.io/kpnishanth/Release</url>
+            <url>packageCloud+https://packagecloud.io/kpnishanth/MavenReleasePluginRepo</url>
         </repository>
         <snapshotRepository>
             <id>packagecloud.Snapshot</id>
