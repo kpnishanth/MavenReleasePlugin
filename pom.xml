@@ -36,7 +36,7 @@
         </repository>
         <snapshotRepository>
             <id>packagecloud.Snapshot</id>
-            <url>packageCloud+https://packagecloud.io/kpnishanth/Snapshot</url>
+            <url>packageCloud+https://packagecloud.io/kpnishanth/MavenReleasePluginSnapshot</url>
         </snapshotRepository>
     </distributionManagement>
 
